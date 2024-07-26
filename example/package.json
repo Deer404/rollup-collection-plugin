@@ -2,9 +2,9 @@
   "name": "example",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
   },
   "keywords": [],
@@ -12,12 +12,15 @@
   "license": "ISC",
   "dependencies": {
     "next": "^14.2.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^18",
+    "react-dom": "^18",
     "typescript": "^5.5.4"
   },
   "devDependencies": {
+    "@deer404/rollup-preserve-directives": "workspace:*",
     "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "rollup": "^4.19.0"
   }
 }

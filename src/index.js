@@ -1,11 +1,13 @@
 import MagicString from "magic-string";
 
-export default function preserveDirectives() {
+export function preserveDirectives() {
   const directivesMap = new Map();
 
   return {
     name: "preserve-directives",
     transform(code, id) {
+      console.log("Processing file:", id);
+      console.log("File content:", code.slice(0, 20));
       const lines = code.split("\n");
       let directiveLines = [];
 
@@ -43,3 +45,4 @@ export default function preserveDirectives() {
     },
   };
 }
+export default preserveDirectives;
