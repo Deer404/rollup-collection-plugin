@@ -1,6 +1,4 @@
-当然可以。我会为您这两个 Rollup 插件创建一个详细的 README 文件。这个 README 将包含插件的描述、安装说明、使用方法、配置选项（如果有的话）以及一些示例。下面是一个建议的 README 内容：
 
-```markdown
 # Rollup Custom Plugins
 
 This package provides two custom Rollup plugins: `multiEntry` and `preserveDirectives`. These plugins enhance your Rollup build process by allowing multiple entry points and preserving directive comments.
