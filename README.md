@@ -1,5 +1,5 @@
 
-# Rollup Custom Plugins
+# Deer404 Rollup Collection Plugin
 
 This package provides two custom Rollup plugins: `multiEntry` and `preserveDirectives`. These plugins enhance your Rollup build process by allowing multiple entry points and preserving directive comments.
 

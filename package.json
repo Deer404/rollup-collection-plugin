@@ -1,5 +1,5 @@
 {
-	"name": "@deer404/rollup-preserve-directives",
+	"name": "@deer404/rollup-collection-plugin",
 	"version": "1.0.0",
 	"type": "module",
 	"description": "A Rollup plugin to preserve use directives",
