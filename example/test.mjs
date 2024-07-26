@@ -1,5 +1,5 @@
 import { rollup } from "rollup";
-import { preserveDirectives } from "@deer404/rollup-preserve-directives";
+import preserveDirectives from "@deer404/rollup-preserve-directives";
 
 async function build() {
   const bundle = await rollup({

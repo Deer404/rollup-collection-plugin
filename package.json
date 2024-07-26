@@ -3,13 +3,13 @@
 	"version": "1.0.0",
 	"type": "module",
 	"description": "A Rollup plugin to preserve use directives",
-	"main": "dist/index.js",
+	"main": "dist/index.cjs.js",
 	"module": "dist/index.esm.js",
 	"types": "dist/index.d.ts",
 	"exports": {
 		".": {
 			"import": "./dist/index.esm.js",
-			"require": "./dist/index.js"
+			"require": "./dist/index.cjs.js"
 		}
 	},
 	"files": [
@@ -23,12 +23,18 @@
 		"directives",
 		"use strict"
 	],
-	"author": "Your Name",
+	"author": "Deer404",
 	"license": "MIT",
 	"dependencies": {
+		"glob": "^11.0.0",
 		"magic-string": "^0.30.10"
 	},
 	"devDependencies": {
-		"rollup": "^4.19.0"
+		"@rollup/plugin-commonjs": "^26.0.1",
+		"@rollup/plugin-node-resolve": "^15.2.3",
+		"@rollup/plugin-typescript": "^11.1.6",
+		"@types/node": "^20.14.12",
+		"rollup": "^4.19.0",
+		"typescript": "^5.5.4"
 	}
 }

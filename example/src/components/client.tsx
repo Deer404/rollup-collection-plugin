@@ -1,5 +1,5 @@
 "use client";
 import React from "react";
-export function ClientComponent() {
+export function clientComponent() {
   return <div>Client</div>;
 }
