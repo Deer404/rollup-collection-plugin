@@ -8,13 +8,18 @@ This package provides two custom Rollup plugins: `multiEntry` and `preserveDirec
 You can install this package using npm:
 
 ```bash
-npm install --save-dev rollup-custom-plugins
+npm install --save-dev @deer404/rollup-collection-plugin
 ```
 
 Or using yarn:
 
 ```bash
-yarn add --dev rollup-custom-plugins
+yarn add --dev @deer404/rollup-collection-plugin
+```
+
+```bash
+# or
+pnpm add --dev @deer404/rollup-collection-plugin
 ```
 
 ## Plugins
