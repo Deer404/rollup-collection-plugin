@@ -19,7 +19,7 @@ yarn add --dev @deer404/rollup-collection-plugin
 
 ```bash
 # or
-pnpm add --dev @deer404/rollup-collection-plugin
+pnpm i -D @deer404/rollup-collection-plugin
 ```
 
 ## Plugins
