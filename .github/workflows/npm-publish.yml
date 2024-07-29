@@ -35,20 +35,14 @@ jobs:
       - name: Build Package
         run: pnpm run build
 
-      - name: Extract version from package.json
-        id: package-version
-        run: |
-          VERSION=$(jq -r .version package.json)
-          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
-
       - name: Publish to npm (Release)
         if: github.event_name == 'release'
-        run: pnpm publish --no-git-checks --new-version ${{ steps.package-version.outputs.VERSION }}
+        run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
       - name: Publish to npm (Manual)
         if: github.event_name == 'workflow_dispatch'
-        run: pnpm publish --no-git-checks --new-version ${{ steps.package-version.outputs.VERSION }} --tag ${{ github.event.inputs.tag }}
+        run: pnpm publish --no-git-checks --tag ${{ github.event.inputs.tag }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
