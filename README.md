@@ -42,7 +42,8 @@ export default {
         '**/*.test.ts',
         '**/*.spec.ts',
         // ... other patterns to ignore
-      ]
+      ],
+      filePattern: "**/*.{ts,tsx,js,jsx}"
     }),
     // ... other plugins
   ],

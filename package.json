@@ -1,6 +1,6 @@
 {
 	"name": "@deer404/rollup-collection-plugin",
-	"version": "1.0.3",
+	"version": "1.0.2",
 	"type": "module",
 	"description": "A Rollup plugin to preserve use directives",
 	"main": "dist/index.cjs.js",
