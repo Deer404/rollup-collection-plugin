@@ -17,7 +17,7 @@
     "typescript": "^5.5.4"
   },
   "devDependencies": {
-    "@deer404/rollup-preserve-directives": "workspace:*",
+    "@deer404/rollup-collection-plugin": "workspace:*",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
